@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+padding: 0;
+height: 100vh;
+width: 100vw;
+background: linear-gradient(72deg, #F5F5DC  1%,   #3CB371	 99%);
+}
+.menu-principal {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color:#ff6200;
+padding: 16px 8px;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+}
+.redes-sociais ul li{
+list-style-type: none;
+}
+  .redes-sociais ul {
+    display: flex;
+    column-gap: 16px;
+}
+#menu-horizontal ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #F5F5DC;
+}
+#menu-horizontal ul li{
+  display: inline;
+}
+#menu-horizontal ul li a{
+  color: #8B0000;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block
+}
+#menu-horizontal ul li a:hover {
+background-color:#98FB98;
+}
+
+/*.content {
+height: 520px;
+width: 935px;
+border-radius: 20px;
+overflow: hidden;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-40%,-25%);
+}
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform:translate(-50%);
+  display: flex;
+}
+.bar {
+  width: 70px;
+  height: 17px;
+  border: 2px solid #fff;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+.bar:hover {
+  background-color: #fff;
+}
+input {
+  display: none;
+}
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+.slide {
+  width: 20%;
+  transition: .6s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+#slide1:checked ~ .s1 {
+margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#slide4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#slide5:checked ~ .s1 {
+  margin-left: -80%;
+}*/
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}

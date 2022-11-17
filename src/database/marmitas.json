@@ -1,0 +1,17 @@
+[
+  {
+      "id":1,
+      "titulo":"Massa Integral",
+      "Prato": [1]
+  },
+  {
+      "id":2,
+      "titulo":"Vegetais",
+      "Prato": [2,3]
+  },
+  {
+      "id":3,
+      "titulo":"Grelhados",
+      "Prato": [1,2]
+  }
+]

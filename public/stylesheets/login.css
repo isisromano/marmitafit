@@ -1,0 +1,57 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+
+    /* From https://css.glass */
+background: rgba(244, 182, 75, 0.9);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+}
+
+.loginBox{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    flex-basis: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.titulo{
+    margin-bottom: 50px;
+}
+.log{
+    display: flex;
+    padding: 10px;
+}
+
+
+.divisao{
+    border-right: 2px solid #333;
+    height: 100%;
+    border-radius: 15%;
+    margin-right: 20px;
+    margin-left: 20px;    
+
+}
+.controles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-top: 5px;
+    flex-basis: 100%;
+}
+.fieldName{
+    display: flex;
+    flex-basis: 100%;
+}
+
+button{
+background-color: rgba(112, 173, 92, 1);
+color: white;
+border-style: none;
+padding: 5px;
+}

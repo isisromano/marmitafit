@@ -1,145 +1,349 @@
-body{
-  margin: 0;
-padding: 0;
-height: 100vh;
-width: 100vw;
-background: linear-gradient(72deg, #F5F5DC  1%,   #3CB371	 99%);
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-.menu-principal {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-padding: 16px 8px;
-margin-bottom: 24px;
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFF;
+
+}
+a{
+    text-decoration: none
+}
+h1{
+    color: white;
+    text-align: center;
+    text-shadow: 4px 5px 5px black;
+}
+p{
+    color: #FFFF;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom: 1px;
+
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.87);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.6px);
+-webkit-backdrop-filter: blur(14.6px);
+}
+.socialMedia{
+    display: flex;
+    align-items: center;
+}
+.logoSocialMedia{
+    height: 5vh;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.barraMenu{
+    display: flex;
+    height: 50px;
+    justify-content:space-between;
+    align-items: center;
+    flex-basis: 100%;
+    color: #fff;
+
+    /* From https://css.glass */
+background: rgba(112, 173, 92, 1);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.6px);
+-webkit-backdrop-filter: blur(14.6px);
+}
+.anuncio{
+    margin-left: 50px;
 }
 .logo{
-  width: 100px;
-  height: 100px;
+        height: 12vh;
+        margin-top: 1vh;;
+        margin-left: 10vh;
+        margin-bottom: 1vh;
 }
-.redes-sociais ul li{
-list-style-type: none;
+.menu{
+    margin-right: 10px;
+    color: #FFFF;
+    margin-right: 50px;
 }
-  .redes-sociais ul {
+.liMenu{
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+/*Carrossel INICIO*/
+
+.slider{
+    flex-basis: 100%;
+    width: 100vw;
+    height: 600px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 600px;
     display: flex;
-    column-gap: 16px;
+    
+} 
+.slides input{
+    display: none;
 }
-#menu-horizontal ul {
-  list-style-type: none;
-  padding: 0;
-  background-color: #F5F5DC;
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
 }
-#menu-horizontal ul li{
-  display: inline;
+.slide img{
+    width: 100vw;
+    justify-self: center;
+    
 }
-#menu-horizontal ul li a{
-  color: #8B0000;
-  text-decoration: none;
-  padding: 20px;
-  display: inline-block
+.text1{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(/imgs/food01.jpg);
+    background-size: cover;
 }
-#menu-horizontal ul li a:hover {
-background-color:#98FB98;
+.text2{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(/imgs/food02.jpg);
+    background-size: cover;
+}
+.text3{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(/imgs/food03.jpg);
+    background-size: cover;
+}
+.text4{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(/imgs/food04.jpg);
+    background-size: cover;
+}
+.manual-navigation{
+    position: absolute;
+    width: 50vw;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25vw;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    }
+#radio3:checked ~ .first{
+   margin-left: -50%;
+    }  
+#radio4:checked ~ .first{
+   margin-left: -75%;
+    }  
+.navigation-auto div{
+    display: none;
+    border: 2px solid #ffa620;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.navigation-auto{
+    position: absolute;
+    width: 95vw;
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+.texto{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    height: 100%;
+    width: 60%;
+}
+/* Carrossel FIM */
+.titulo{
+    flex-basis: 100%;
+    color:#FFFF;
+    text-align: center;
+    text-shadow: 4px 5px 5px black;
+    
+}
+.pratos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    height: 700px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-basis: 100%;
+
+/* From https://css.glass */
+background: rgba(244, 182, 75, 0.9);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+}
+.pratoItem{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        height: 250px;
+        width: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px;
+        color: #001528;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.87);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.6px);
+-webkit-backdrop-filter: blur(14.6px);
+  
+        
+}
+.pratoIcon{
+    width: 100%;
+    height: 160px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+.pratoDesc{
+    margin-bottom: 10px;
+}
+.pratoPrice{
+    margin-bottom: 10px;
+    color: #cc4e51;
 }
 
-.slider {
-  width: 100%;
-  max-width: 1200px;
-  height: 350px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto 24px auto;
+.quebraLinha{
+    flex-basis: 100%;
 
 }
 
-.slide {
-  width: 100%;
-  max-width: 1200px;
-  height: 350px;
-  position: absolute;
-  transition: all 0.5s;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.btn {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  z-index: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  font-size: 18px;
-}
-
-.btn:active {
-  transform: scale(1.1);
-}
-
-.btn-prev {
-  top: 45%;
-  left: 2%;
-}
-
-.btn-next {
-  top: 45%;
-  right: 2%;
-}
-footer {
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-padding: 16px 8px;
-  background-color: #F5F5DC;
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+background-image: url(/imgs/form05.jpg);
+    background-size: cover;
 
 }
-.fundo-laranja{
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 450px;
+    color: #001528;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+/* From https://css.glass */
+background: rgba(112, 173, 92, 1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(14.6px);
+-webkit-backdrop-filter: blur(14.6px);
+}
+.formName{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-basis: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 }
-main {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  position: relative;
-          }
-          .tela-login {
-            background-color: rgb(250, 92, 19);
-            padding: 50px;
-            border-radius: 30px;
-            width: 20%;
-           
-           
-           
-          }
-          input {
-            padding: 15px;
-            border: none;
-            outline: none;
-            font-size: 15px;
-          }
-          button {
-            background-color: #e22e2e;
-            border: none;
-            padding: 15px;
-            width: 25%;
-            border-radius: 10px;
-            color: #fff;
-          }
-          button:hover{
-            background-color: black;
-            cursor: pointer;
-          }
-          footer {
-            bottom: 0%;
-            position: absolute;
-            width: 100%;
-            height: 100px;    
-            text-align: center;
-   
-          }
+.entryField{
+    margin-right: 20px;
+}
+.entry{
+   border-radius: 5px;
+   border:none;
+   padding: 5px;
+}
+.entry-label{
+    margin-left: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 100%;
+    height: 40px;
+    align-items: center;
+    color: #FFFF;
+    /* From https://css.glass */
+background: rgba(204, 78, 81, 0.96);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.5px);
+-webkit-backdrop-filter: blur(9.5px);
+}

@@ -4,6 +4,18 @@ const express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+var session =  require("express-session");
+const UsuariosRouter = require('./routes/UsuariosRouter'); 
+app.use(
+  session({
+    secret: 'CHAVE-SECRETA',
+    resave: false,
+    saveUninitialized: true
+  })
+  );
+  app.use(express.static("public"));
+  app.use ('/usuarios', UsuariosRouter);
+  // DECLARAÇÃO DE MIDDLEWARE GLOBAIS (PRECISA????????)
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");

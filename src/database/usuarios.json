@@ -1,0 +1,58 @@
+[{
+    "id":1,
+    "nome":"Chico Buarque",
+    "email":"buarque@deholanda.com",
+    "senha":"d3v143s74rcr1p70gr4f4d4",
+    "filhos":[
+        "Sílvia",
+        "Helena",
+        "Luísa"
+    ]
+},
+{
+    "id":2,
+    "nome":"Gilberto Gil",
+    "email":"gilberto@gil.com",
+    "senha":"d3v143s74rcr1p70gr4f4d4",
+    "filhos":[
+        "Preta",
+        "Bela",
+        "Pedro",
+        "Bem",
+        "José",
+        "Marília",
+        "Maria",
+        "Nara"
+    ]
+},
+{
+    "id":3,
+    "nome":"Caetano Veloso",
+    "email":"caetano@veloso.com",
+    "senha":"d3v143s74rcr1p70gr4f4d4",
+    "filhos":[
+        "Moreno",
+        "Zeca",
+        "Tom"
+    ]
+},
+{
+    "id":4,
+    "nome":"Milton Nascimento",
+    "email":"milton@nascimento.com",
+    "senha":"d3v143s74rcr1p70gr4f4d4",
+    "filhos":[
+        "Augusto Kesrouani"
+    ]
+},
+{
+    "id":5,
+    "nome":"Elis Regina",
+    "email":"elis@regina.com",
+    "senha":"d3v143s74rcr1p70gr4f4d4",
+    "filhos":[
+        "Maria Rita",
+        "João Marcelo",
+        "Pedro Mariano"
+    ]
+}]

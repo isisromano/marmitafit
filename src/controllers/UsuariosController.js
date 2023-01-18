@@ -6,7 +6,7 @@ const usuariosController ={
        res.render('entrar.ejs',{erroNoCadastro})
     },
     add: (req,res) =>{
-        let (email,senha, confirmacao,endereco) = req.body;
+        let {email,senha,confirmacao,endereco} = req.body;
         if(senha != confirmacao){
             return res.redirect('/usuarios/entrar?erroNoCadastro=1');
         }
@@ -23,8 +23,7 @@ const usuariosController ={
          fs.writeFileSync(
             path.join(_dirname,'../database/usuarios.json'),
             JSON.stringify(usuarios, null, 4)
-         );b b
-         delete usuario.senha;
+         );
          req.session.usuario = usuario; 
 
         res.send(usuario);

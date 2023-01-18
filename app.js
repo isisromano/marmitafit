@@ -6,6 +6,8 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var session =  require("express-session");
 const UsuariosRouter = require('./routes/UsuariosRouter'); 
+var app = express();
+// 3 CRIAR UMA ROTA QUE RESPONDA AO CLIENTE
 app.use(
   session({
     secret: 'CHAVE-SECRETA',
@@ -21,8 +23,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var loginRouter = require("./routes/login");
 // 2 CRIAR UMA APLICAÇÃO EXPRESS
-var app = express();
-// 3 CRIAR UMA ROTA QUE RESPONDA AO CLIENTE
+
 
                         
 app.listen(3000, () => {
